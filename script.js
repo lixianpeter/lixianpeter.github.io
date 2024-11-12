@@ -31,6 +31,9 @@
 
 const desiredRepo = "lixianpeter.github.io";
 const dateTagClass = ".date";
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function()
@@ -46,10 +49,11 @@ xhttp.onreadystatechange = function()
         var day = lastUpdated.getUTCDate();
         var month = lastUpdated.getUTCMonth();
         var year = lastUpdated.getUTCFullYear();
-        $(dateTagClass).text(`Last updated: ${year}-${month+1}-${day}`);
+        $(dateTagClass).text(`Last updated: ${year}-${monthNames[month]}-${day}`);
       }
     });
   }
 };
 xhttp.open("GET", "https://api.github.com/users/lixianpeter/repos", true);
 xhttp.send();
+
