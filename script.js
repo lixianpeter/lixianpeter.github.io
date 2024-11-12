@@ -29,8 +29,8 @@
 })(jQuery);
 
 
-const desiredRepo = "seachel.github.io";
-const dateTagClass = ".date";
+const desiredRepo = "lixianpeter.github.io";
+const dateTagClass = ".date"; // The HTML element you want to update
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function()
@@ -51,5 +51,5 @@ xhttp.onreadystatechange = function()
     });
   }
 };
-xhttp.open("GET", "https://api.github.com/users/seachel/repos", true);
+xhttp.open("GET", "https://api.github.com/users/lixianpeter/repos", true);
 xhttp.send();
