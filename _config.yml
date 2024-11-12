@@ -1,3 +1,10 @@
-theme: jekyll-theme-minimal
-title: Xian Li's homepage
-description: I am a data scientist passionate about using quantitative techniques to solve real-world problems. Bookmark this to keep an eye on my updates!
+# theme: jekyll-theme-minimal
+# title: Xian Li's homepage
+# description: I am a data scientist passionate about using quantitative techniques to solve real-world problems. Bookmark this to keep an eye on my updates!
+
+plugins:
+  - jekyll-last-modified-at
+
+# Optional. The default date format, used if none is specified in the tag.
+last-modified-at:
+    date-format: '%d-%b-%y'
